@@ -1,0 +1,10 @@
+Grub:
+	- Theme: ./scripts/3-post-setup.sh, line 40 - 55
+
+Boot-Splash:
+	- Theme: ./scripts/3-post-setup.sh, line 134 - 136
+
+Openbox: 
+	- Theme Install: ./scripts/2-user.sh, line 72/73
+	- lightdm-settings: ./scripts/3-post-setup.sh, line 77 - 81
+	- openbox-menues: ./scripts/2-user.sh, line 72/73 via https://github.com/stojshic/dotfiles-openbox/ under .config/openbox/menu.xml

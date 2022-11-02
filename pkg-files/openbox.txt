@@ -28,7 +28,6 @@ thunar-media-tags-plugin
 tumbler
 jq
 w3m
-geany
 nano
 viewnior
 pavucontrol
