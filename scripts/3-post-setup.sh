@@ -39,7 +39,7 @@ sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="[^"]*/& splash /' /etc/default/grub
 
 echo -e "Installing Grub theme..."
 THEME_DIR="/boot/grub/themes"
-THEME_NAME=MyTheme # original: CyberRe; make selectable (best at beginning of setup, not directly here)
+THEME_NAME=CyberReB # original: CyberRe; make selectable (best at beginning of setup, not directly here)
 echo -e "Creating the theme directory..."
 mkdir -p "${THEME_DIR}/${THEME_NAME}"
 echo -e "Copying the theme..."
@@ -74,12 +74,12 @@ elif [[ "${DESKTOP_ENV}" == "lxde" ]]; then
 
 elif [[ "${DESKTOP_ENV}" == "openbox" ]]; then
   systemctl enable lightdm.service
-  if [[ "${INSTALL_TYPE}" == "FULL" ]]; then
-    # Set default lightdm-webkit2-greeter theme to # original: Litarvan = litarvan
-    sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = aether #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
-    # Set default lightdm greeter to lightdm-webkit2-greeter
-    sed -i 's/#greeter-session=example.*/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
-  fi
+  # if [[ "${INSTALL_TYPE}" == "FULL" ]]; then
+  #   # Set default lightdm-webkit2-greeter theme to # original: Litarvan = litarvan
+  #   sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = aether #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
+  #   # Set default lightdm greeter to lightdm-webkit2-greeter
+  #   sed -i 's/#greeter-session=example.*/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
+  # fi
 
 else
   if [[ ! "${DESKTOP_ENV}" == "server"  ]]; then
