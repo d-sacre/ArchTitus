@@ -8,3 +8,26 @@ Openbox:
 	- Theme Install: ./scripts/2-user.sh, line 72/73
 	- lightdm-settings: ./scripts/3-post-setup.sh, line 77 - 81
 	- openbox-menues: ./scripts/2-user.sh, line 72/73 via https://github.com/stojshic/dotfiles-openbox/ under .config/openbox/menu.xml
+
+Software:
+	- standard repo: ./pkg-files/pacman-pkgs.txt
+		- removed:
+				- gamemode (temporary optimization of OS for gaming)
+				- kitty (terminal emulator)
+				- lutris (open gaming platform)
+				- steam (steam client)
+				- synergy (mouse/keyboard shared over multiple devices)
+				- Windows Emulation/Compatibility
+					- wine-gecko
+					- wine-mono
+					- winetricks
+		- added:
+				- firefox
+				- chromium
+	- AUR: ./pkg-files/aur-pkgs.txt
+		- removed:
+				- github-desktop-bin (github desktop client)
+				- FPS Overlay 
+					- mangohud
+					- mangohud-common
+				- zoom

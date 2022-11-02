@@ -27,6 +27,7 @@ bluez-utils
 bridge-utils
 btrfs-progs
 celluloid
+chromium
 cmatrix
 code
 cronie
@@ -38,11 +39,11 @@ dtc
 efibootmgr
 egl-wayland
 exfat-utils
+firefox
 flex
 fuse2
 fuse3
 fuseiso
-gamemode
 gcc
 gimp
 gparted
@@ -54,11 +55,9 @@ gst-plugins-ugly
 haveged
 htop
 jdk-openjdk
-kitty
 libdvdcss
 libtool
 lsof
-lutris
 lzop
 m4
 make
@@ -84,9 +83,7 @@ python-pip
 qemu
 snap-pac
 snapper
-steam
 swtpm
-synergy
 terminus-font
 traceroute
 ttf-droid
@@ -98,9 +95,6 @@ unzip
 virt-manager
 virt-viewer
 which
-wine-gecko
-wine-mono
-winetricks
 zip
 zsh
 zsh-syntax-highlighting
