@@ -1,8 +1,4 @@
-# Archived and No longer maintained. 
-
-Due to the constant updates and time it takes to maintain this script I will no longer be updating it. Free free to fork it and take what you want from here. There has been some fantastic contributions over the past year and I learned a lot while making this project. 
-
-Thank you!
+This is a fork of Chris Titus's Arch Linux Installer Script.
 
 # ArchTitus Installer Script
 [![GitHub Super-Linter](https://github.com/ChrisTitusTech/ArchTitus/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
@@ -16,7 +12,6 @@ This README contains the steps I do to install and configure a fully-functional 
 
 Download ArchISO from <https://archlinux.org/download/> and put on a USB drive with [Etcher](https://www.balena.io/etcher/), [Ventoy](https://www.ventoy.net/en/index.html), or [Rufus](https://rufus.ie/en/)
 
-If you don't want to build using this script I did create an image @ <https://cttstore.com/arch-titus>
 
 ## Boot Arch ISO
 
@@ -39,6 +34,18 @@ __[Arch Linux RickEllis Installation Guide](https://github.com/rickellis/Arch-Li
 __[Arch Linux Wiki Installation Guide](https://wiki.archlinux.org/title/Installation_guide)__
 
 The main script will generate .log files for every script that is run as part of the installation process. These log files contain the terminal output so you can review any warnings or errors that occurred during installation and aid in troubleshooting. 
+
+### Keyring is not writable
+Run the following commands one after the other:
+```
+pacman-key --init
+pacman-key --populate
+pacman-key --refresh-keys
+pacman -Sy archlinux-keyring
+```
+This might take some time.
+Source: https://bbs.archlinux.org/viewtopic.php?id=187746
+
 ### No Wifi
 
 You can check if the WiFi is blocked by running `rfkill list`.
@@ -56,15 +63,8 @@ After unblocking the WiFi, you can connect to it. Go through these 5 steps:
 
 #5: Find your network, and run `station [device name] connect [network name]`, enter your password and run `exit`. You can test if you have internet connection by running `ping google.com`, and then Press Ctrl and C to stop the ping test.
 
-## Reporting Issues
 
-An issue is easier to resolve if it contains a few important pieces of information.
-1. Chosen configuration from /configs/setup.conf (DONT INCLUDE PASSWORDS)
-1. Errors seen in .log files
-1. What commit/branch you used
-1. Where you were installing (VMWare, Virtualbox, Virt-Manager, Baremetal, etc)
-    1. If a VM, what was the configuration used.
 ## Credits
-
-- Original packages script was a post install cleanup script called ArchMatic located here: https://github.com/rickellis/ArchMatic
+- The fork is based upon Chris Titus's Arch Installer Script "ArchTitus": https://github.com/ChrisTitusTech/ArchTitus/
+- ArchTitus is based upon "ArchMatic": a post install cleanup script: https://github.com/rickellis/ArchMatic
 - Thank you to all the folks that helped during the creation from YouTube Chat! Here are all those Livestreams showing the creation: <https://www.youtube.com/watch?v=IkMCtkDIhe8&list=PLc7fktTRMBowNaBTsDHlL6X3P3ViX3tYg>

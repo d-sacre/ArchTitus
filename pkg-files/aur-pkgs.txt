@@ -1,10 +1,10 @@
 --END OF MINIMAL INSTALL--
 autojump
-brave-bin
 bridge-utils
 dxvk-bin
 lightly-git
 lightlyshaders-git
+lightdm-webkit-theme-aether
 nerd-fonts-fira-code
 nordic-darker-standard-buttons-theme
 nordic-darker-theme
