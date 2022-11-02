@@ -4,6 +4,7 @@ bridge-utils
 dxvk-bin
 lightdm-webkit-theme-aether
 nerd-fonts-fira-code
+obmenu-generator
 ocs-url
 plymouth-git
 snapper-gui-git

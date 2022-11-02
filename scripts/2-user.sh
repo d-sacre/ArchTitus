@@ -72,6 +72,14 @@ if [[ $INSTALL_TYPE == "FULL" ]]; then
     # git clone https://github.com/stojshic/dotfiles-openbox
     # ./dotfiles-openbox/install-titus.sh
     echo "Openbox-Theme-Settings: Pass for now" # options to install openbox theme
+    cd "/home/$USERNAME/.config"
+    mkdir openbox
+    cd ./openbox/
+    touch ./autostart
+    echo "tint2 &" > ./autostart
+
+    # creating the menu
+    obmenu-generator -p -i
   fi
 fi
 

@@ -1,6 +1,8 @@
 openbox
 lightdm
 lightdm-gtk-greeter
+menumaker
+nano
 thunar
 lxsession
 rxvt-unicode
@@ -27,7 +29,6 @@ thunar-media-tags-plugin
 tumbler
 jq
 w3m
-nano
 viewnior
 pavucontrol
 parcellite
