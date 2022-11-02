@@ -74,6 +74,7 @@ elif [[ "${DESKTOP_ENV}" == "lxde" ]]; then
 
 elif [[ "${DESKTOP_ENV}" == "openbox" ]]; then
   systemctl enable lightdm.service
+  # Selection for lightdm-greeter
   # if [[ "${INSTALL_TYPE}" == "FULL" ]]; then
   #   # Set default lightdm-webkit2-greeter theme to # original: Litarvan = litarvan
   #   sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = aether #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf

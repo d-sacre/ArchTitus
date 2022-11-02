@@ -2,17 +2,10 @@
 autojump
 bridge-utils
 dxvk-bin
-lightly-git
-lightlyshaders-git
 lightdm-webkit-theme-aether
 nerd-fonts-fira-code
-nordic-darker-standard-buttons-theme
-nordic-darker-theme
-nordic-kde-git
-nordic-theme
 ocs-url
 plymouth-git
-sddm-nordic-theme-git
 snapper-gui-git
 ttf-meslo
 vde2

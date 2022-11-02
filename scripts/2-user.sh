@@ -68,9 +68,10 @@ if [[ $INSTALL_TYPE == "FULL" ]]; then
     sleep 1
     konsave -a kde
   elif [[ $DESKTOP_ENV == "openbox" ]]; then
-    cd ~
-    git clone https://github.com/stojshic/dotfiles-openbox
-    ./dotfiles-openbox/install-titus.sh
+    # cd ~
+    # git clone https://github.com/stojshic/dotfiles-openbox
+    # ./dotfiles-openbox/install-titus.sh
+    echo "Openbox-Theme-Settings: Pass for now" # options to install openbox theme
   fi
 fi
 

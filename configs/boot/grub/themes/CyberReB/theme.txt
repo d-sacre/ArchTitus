@@ -20,7 +20,7 @@
     item_font = "DroidLogo Regular 17"
     item_color = "#fb3048"
     selected_item_font = "DroidLogo Regular 17"
-    selected_item_color = "#74d6cf"
+    selected_item_color = "#85ece3"
     icon_width = 16
     icon_height = 16
     item_height = 33
