@@ -65,20 +65,20 @@ if [[ $DESKTOP_ENV == "openbox" ]]; then
     localectl --no-ask-password set-x11-keymap ${KEYMAP}
 
     # create folder and copy openbox settings
-    mkdir /home/$USERNAME/.config/openbox
-    cp -r ~/ArchTitus/config/openbox/* /home/$USERNAME/.config/openbox/
+    mkdir ~/.config/openbox
+    cp -r ~/ArchTitus/config/openbox/* ~/.config/openbox/
 
     # create folder and copy tint2 settings
-     mkdir /home/$USERNAME/.config/tint2
-     cp -r ~/ArchTitus/config/tint2/* /home/$USERNAME/.config/tint2/
+     mkdir ~/.config/tint2
+     cp -r ~/ArchTitus/config/tint2/* ~/.config/tint2/
 
     # creating the openbox menu (pipe with icons)
     obmenu-generator -p -i
 
     # Copy and set the default wallpaper in nitrogen
-    mkdir /home/$USERNAME/Pictures/wallpaper
-    cp -r ~/ArchTitus/wallpaper/* /home/$USERNAME/Pictures/wallpaper/
-    nitrogen --set-zoom-fill /home/$USERNAME/Pictures/wallpaper/oskar_ascii_orange-white_1920x1080.png
+    mkdir ~/Pictures/wallpaper
+    cp -r ~/ArchTitus/wallpaper/* ~/Pictures/wallpaper/
+    nitrogen --set-zoom-fill ~/Pictures/wallpaper/oskar_ascii_orange-white_1920x1080.png
 fi
 
 # Theming DE if user chose FULL installation
