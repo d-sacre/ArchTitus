@@ -66,11 +66,11 @@ if [[ $DESKTOP_ENV == "openbox" ]]; then
 
     # create folder and copy openbox settings
     mkdir ~/.config/openbox
-    cp -r ~/ArchTitus/config/openbox/* ~/.config/openbox/
+    cp -r ~/ArchTitus/configs/openbox/* ~/.config/openbox/
 
     # create folder and copy tint2 settings
      mkdir ~/.config/tint2
-     cp -r ~/ArchTitus/config/tint2/* ~/.config/tint2/
+     cp -r ~/ArchTitus/configs/tint2/* ~/.config/tint2/
 
     # creating the openbox menu (pipe with icons)
     obmenu-generator -p -i
