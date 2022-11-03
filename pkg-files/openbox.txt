@@ -2,9 +2,12 @@ openbox
 lightdm
 lightdm-gtk-greeter
 menumaker
+mousepad
+htop
 nano
 nitrogen
 thunar
+tint2
 lxsession
 rxvt-unicode
 --END OF MINIMAL INSTALL--
@@ -14,10 +17,8 @@ pulseaudio-alsa
 wireless_tools
 zsh
 dunst
-tint2
 rofi
 feh
-lightdm-webkit2-greeter
 lxappearance
 qt5ct
 gsimplecal
@@ -34,7 +35,6 @@ viewnior
 pavucontrol
 parcellite
 neofetch
-htop
 picom
 gtk2-perl
 xfce4-power-manager

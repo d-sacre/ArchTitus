@@ -61,7 +61,6 @@ lsof
 lzop
 m4
 make
-mousepad
 neofetch
 ntfs-3g
 ntp
