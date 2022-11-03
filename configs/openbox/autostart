@@ -1,2 +1,3 @@
 tint2 &
 (sleep 1s && nitrogen --restore) & 
+nitrogen --set-zoom-fill ~/Pictures/oskar_ascii_orange-white_1920x1080.png & 
