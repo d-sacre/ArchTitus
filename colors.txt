@@ -1,0 +1,2 @@
+active window: 81cae0
+background window: 2d2d2d

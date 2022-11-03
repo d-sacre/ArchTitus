@@ -3,6 +3,7 @@ lightdm
 lightdm-gtk-greeter
 menumaker
 nano
+nitrogen
 thunar
 lxsession
 rxvt-unicode

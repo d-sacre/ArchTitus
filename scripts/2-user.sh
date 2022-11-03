@@ -59,6 +59,28 @@ fi
 
 export PATH=$PATH:~/.local/bin
 
+# Theming Openbox DE (minimum required; for both default and full install)
+if [[ $DESKTOP_ENV == "openbox" ]]; then
+    # set the keyboard layout
+    localectl --no-ask-password set-x11-keymap ${KEYMAP}
+
+    # create folder and copy openbox settings
+    mkdir /home/$USERNAME/.config/openbox
+    cp -r ~/ArchTitus/config/openbox/* /home/$USERNAME/.config/openbox/
+
+    # create folder and copy tint2 settings
+     mkdir /home/$USERNAME/.config/tint2
+     cp -r ~/ArchTitus/config/tint2/* /home/$USERNAME/.config/tint2/
+
+    # creating the openbox menu (pipe with icons)
+    obmenu-generator -p -i
+
+    # Copy and set the default wallpaper in nitrogen
+    mkdir /home/$USERNAME/Pictures/wallpaper
+    cp -r ~/ArchTitus/wallpaper/* /home/$USERNAME/Pictures/wallpaper/
+    nitrogen --set-zoom-fill /home/$USERNAME/Pictures/wallpaper/oskar_ascii_orange-white_1920x1080.png
+fi
+
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "FULL" ]]; then
   if [[ $DESKTOP_ENV == "kde" ]]; then
@@ -68,18 +90,12 @@ if [[ $INSTALL_TYPE == "FULL" ]]; then
     sleep 1
     konsave -a kde
   elif [[ $DESKTOP_ENV == "openbox" ]]; then
+    # Option for additional Openbox theming
+    echo "Nothing to do here"
+    # original code
     # cd ~
     # git clone https://github.com/stojshic/dotfiles-openbox
     # ./dotfiles-openbox/install-titus.sh
-    echo "Openbox-Theme-Settings: Pass for now" # options to install openbox theme
-    cd "/home/$USERNAME/.config"
-    mkdir openbox
-    cd ./openbox/
-    touch ./autostart
-    echo "tint2 &" > ./autostart
-
-    # creating the menu
-    obmenu-generator -p -i
   fi
 fi
 

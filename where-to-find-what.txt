@@ -24,6 +24,7 @@ Software:
 		- added:
 				- firefox
 				- chromium
+				- nitrogen
 	- AUR: ./pkg-files/aur-pkgs.txt
 		- removed:
 				- github-desktop-bin (github desktop client)
@@ -31,3 +32,5 @@ Software:
 					- mangohud
 					- mangohud-common
 				- zoom
+		- added: 
+			- compiz (for tint2 compositing)
