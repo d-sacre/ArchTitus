@@ -7,4 +7,4 @@ localectl --no-ask-password set-x11-keymap de & # not working
 
 # Delete autostart file for first start and rename backup file
 # not working
-rm -f autostart && mv autostart.bak autostart &
+rm -f ~/.config/openbox/autostart && mv ~/.config/openbox/autostart.bak ~/.config/openbox/autostart &
