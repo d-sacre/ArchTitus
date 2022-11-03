@@ -1,3 +1,3 @@
 tint2 &
 # Initialize the system during first startup
-sh ~/ArchTitus/scripts/post-install_openbox_first-startup.sh
+sh ~/ArchTitus/scripts/post-install_openbox_first-startup.sh &
