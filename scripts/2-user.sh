@@ -78,7 +78,7 @@ if [[ $DESKTOP_ENV == "openbox" ]]; then
     # Copy and set the default wallpaper in nitrogen
     mkdir ~/.config/wallpaper
     cp -r ~/ArchTitus/wallpaper/* ~/.config/wallpaper
-    nitrogen --set-zoom-fill ~/.config/wallpaper/oskar_ascii_orange-white_1920x1080.png
+    #nitrogen --set-zoom-fill ~/.config/wallpaper/oskar_ascii_orange-white_1920x1080.png
 fi
 
 # Theming DE if user chose FULL installation
