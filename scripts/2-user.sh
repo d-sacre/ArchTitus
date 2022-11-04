@@ -63,6 +63,7 @@ export PATH=$PATH:~/.local/bin
 if [[ $DESKTOP_ENV == "openbox" ]]; then
     # set the keyboard layout
     localectl --no-ask-password set-x11-keymap ${KEYMAP}
+    cp ~ArchTitus/.configs/keyboard/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf # backup solution to make it persistent if localectl not working; WARNING: Layout hardcoded
 
     # create folder and copy openbox settings
     mkdir ~/.config/openbox
