@@ -34,7 +34,7 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is, 'Primary' - only on the primary monitor -->
-    <primaryMonitor>2</primaryMonitor>
+    <primaryMonitor>1</primaryMonitor>
     <!-- The monitor where Openbox should place popup dialogs such as the
        focus cycling popup, or the desktop switch popup.  It can be an index
        from 1, specifying a particular monitor.  Or it can be one of the
@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>oskar-dark</name>
-    <titleLayout>CSIML</titleLayout>
+    <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -75,21 +75,21 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Sans</name>
-      <size>8</size>
+      <name>sans</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Sans</name>
-      <size>8</size>
+      <name>sans</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
@@ -250,231 +250,8 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-    <!-- Tiling Windows -->
-    <keybind key="W-A-KP_7">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_8">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>25%</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_9">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_4">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>25%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_6">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>25%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_1">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_2">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>25%</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_3">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-A-KP_5">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>center</x>
-        <y>center</y>
-        <width>95%</width>
-        <height>95%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_7">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0%</x>
-        <y>0%</y>
-        <width>33%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_8">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>33%</x>
-        <y>0%</y>
-        <width>34%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_9">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>67%</x>
-        <y>0%</y>
-        <width>33%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_4">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0%</x>
-        <y>33%</y>
-        <width>33%</width>
-        <height>34%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_5">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>33%</x>
-        <y>33%</y>
-        <width>34%</width>
-        <height>34%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_6">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>67%</x>
-        <y>33%</y>
-        <width>33%</width>
-        <height>34%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_1">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0%</x>
-        <y>67%</y>
-        <width>33%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_2">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>33%</x>
-        <y>67%</y>
-        <width>34%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_3">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>67%</x>
-        <y>67%</y>
-        <width>33%</width>
-        <height>33%</height>
-      </action>
-    </keybind>
-    <keybind key="W-Right">
-      <action name="UnmaximizeFull"/>
-      <action name="GrowToEdgeEast"/>
-    </keybind>
-    <keybind key="W-Left">
-      <action name="UnmaximizeFull"/>
-      <action name="GrowToEdgeWest"/>
-    </keybind>
-    <keybind key="W-Down">
-      <action name="UnmaximizeFull"/>
-      <action name="GrowToEdgeSouth"/>
-    </keybind>
-    <keybind key="W-Up">
-      <action name="UnmaximizeFull"/>
-      <action name="GrowToEdgeNorth"/>
-    </keybind>
-    <keybind key="W-A-Up">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeHorizontal"/>
-      <action name="MoveResizeTo">
-        <width>100%</width>
-        <height>50%</height>
-        <x>0</x>
-        <y>0</y>
-      </action>
-    </keybind>
-    <keybind key="W-A-Down">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeHorizontal"/>
-      <action name="MoveResizeTo">
-        <width>100%</width>
-        <height>50%</height>
-        <x>0</x>
-        <y>-0</y>
-      </action>
-    </keybind>
-    <keybind key="W-A-Left">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-        <x>0</x>
-        <y>0</y>
-      </action>
-    </keybind>
-    <keybind key="W-A-Right">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-        <x>-0</x>
-        <y>0</y>
-      </action>
-    </keybind>
-    <keybind key="A-r">
-      <action name="Resize"/>
-    </keybind>
-    <keybind key="A-m">
-      <action name="Move"/>
-    </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="S-W-c">
+    <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -486,18 +263,6 @@
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
-    </keybind>
-    <keybind key="S-W-b">
-      <action name="ToggleDecorations"/>
-    </keybind>
-    <keybind key="S-W-Return">
-      <action name="ToggleFullscreen"/>
-    </keybind>
-    <keybind key="A-Down">
-      <action name="Iconify"/>
-    </keybind>
-    <keybind key="A-Up">
-      <action name="ToggleMaximize"/>
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
@@ -550,85 +315,14 @@
         <direction>down</direction>
       </action>
     </keybind>
-    <!-- Keybindings for launching terminal -->
-    <keybind key="W-Return">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Termite</name>
-        </startupnotify>
-        <command>termite</command>
-      </action>
-    </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-space">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="W-r">
+    <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Rofi</name>
+          <name>Konqueror</name>
         </startupnotify>
-        <command>rofi -show run</command>
-      </action>
-    </keybind>
-    <!-- Keybindings for important applications -->
-    <keybind key="W-w">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Firefox</name>
-        </startupnotify>
-        <command>firefox</command>
-      </action>
-    </keybind>
-    <keybind key="W-f">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>PCManFM</name>
-        </startupnotify>
-        <command>pcmanfm</command>
-      </action>
-    </keybind>
-    <keybind key="S-W-k">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>xkill</name>
-        </startupnotify>
-        <command>xkill</command>
-      </action>
-    </keybind>
-    <keybind key="W-v">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>pavucontrol</name>
-        </startupnotify>
-        <command>pavucontrol</command>
-      </action>
-    </keybind>
-    <keybind key="W-l">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>i3lock</name>
-        </startupnotify>
-        <command>i3lock -c 48D884</command>
-      </action>
-    </keybind>
-    <!-- Keybindings for exiting out of Openbox -->
-    <keybind key="S-W-q">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Oblogout</name>
-        </startupnotify>
-        <command>oblogout</command>
+        <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
   </keyboard>

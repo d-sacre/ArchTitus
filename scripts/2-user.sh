@@ -63,15 +63,18 @@ export PATH=$PATH:~/.local/bin
 if [[ $DESKTOP_ENV == "openbox" ]]; then
     # set the keyboard layout
     localectl --no-ask-password set-x11-keymap ${KEYMAP}
-    cp ~ArchTitus/.configs/keyboard/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf # backup solution to make it persistent if localectl not working; WARNING: Layout hardcoded
+    sudo cp ~/ArchTitus/.configs/keyboard/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf # backup solution to make it persistent if localectl not working; WARNING: Layout hardcoded
+
+    # copy openbox theme(s)
+    sudo cp -r ~/ArchTitus/configs/usr/share/themes/* /usr/share/themes
 
     # create folder and copy openbox settings
     mkdir ~/.config/openbox
     cp -r ~/ArchTitus/configs/openbox/* ~/.config/openbox/
 
     # create folder and copy tint2 settings
-     mkdir ~/.config/tint2
-     cp -r ~/ArchTitus/configs/tint2/* ~/.config/tint2/
+    mkdir ~/.config/tint2
+    cp -r ~/ArchTitus/configs/tint2/* ~/.config/tint2/
 
     # creating the openbox menu (pipe with icons)
     obmenu-generator -p -i
@@ -79,7 +82,6 @@ if [[ $DESKTOP_ENV == "openbox" ]]; then
     # Copy and set the default wallpaper in nitrogen
     mkdir ~/.config/wallpaper
     cp -r ~/ArchTitus/wallpaper/* ~/.config/wallpaper
-    #nitrogen --set-zoom-fill ~/.config/wallpaper/oskar_ascii_orange-white_1920x1080.png
 fi
 
 # Theming DE if user chose FULL installation
