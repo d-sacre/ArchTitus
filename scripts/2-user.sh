@@ -63,7 +63,7 @@ export PATH=$PATH:~/.local/bin
 if [[ $DESKTOP_ENV == "openbox" ]]; then
     # set the keyboard layout
     localectl --no-ask-password set-x11-keymap ${KEYMAP}
-    sudo cp ~/ArchTitus/.configs/keyboard/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf # backup solution to make it persistent if localectl not working; WARNING: Layout hardcoded
+    sudo cp ~/ArchTitus/configs/keyboard/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf # backup solution to make it persistent if localectl not working; WARNING: Layout hardcoded
 
     # copy openbox theme(s)
     sudo cp -r ~/ArchTitus/configs/usr/share/themes/* /usr/share/themes
@@ -77,7 +77,7 @@ if [[ $DESKTOP_ENV == "openbox" ]]; then
     cp -r ~/ArchTitus/configs/tint2/* ~/.config/tint2/
 
     # creating the openbox menu (pipe with icons)
-    obmenu-generator -p -i
+    # obmenu-generator -p -i # not working here, since Openbox not running; moved to autostart
 
     # Copy and set the default wallpaper in nitrogen
     mkdir ~/.config/wallpaper

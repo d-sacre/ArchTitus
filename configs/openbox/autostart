@@ -1,3 +1,4 @@
 tint2 &
+obmenu-generator -p -i &
 # Initialize the system during first startup
 sh ~/ArchTitus/scripts/post-install_openbox_first-startup.sh &
